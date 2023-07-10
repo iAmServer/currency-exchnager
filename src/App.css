@@ -1,0 +1,166 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#error-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.nav-bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.nav-bar img {
+  width: 50px;
+}
+
+.nav-bar .nav-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main-body {
+  padding: 16px;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-title a {
+  height: fit-content;
+}
+
+.calculator {
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  flex-direction: column;
+}
+
+.calculator .calculator-container {
+  display: flex;
+  gap: 12px;
+  justify-content: space-around;
+}
+
+.calculator .calculator-container .item {
+  flex-basis: 40%;
+}
+
+.calculator .actions {
+  display: flex;
+  gap: 12px;
+}
+
+.calculator .sub-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.calculator .sub-actions p {
+  border: 1px solid #ccc;
+  flex: 1;
+  padding: 0.75em;
+  border-radius: 0.5em;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button {
+  text-decoration: none;
+  border: 1px solid blue;
+  border-radius: 4px;
+  color: white;
+  background-color: blue;
+  font-size: 14px;
+  padding: 1rem;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+a {
+  text-decoration: none;
+  border: 1px solid blue;
+  border-radius: 4px;
+  color: blue;
+  font-size: 14px;
+  padding: 1rem;
+}
+
+a:hover {
+  color: white;
+  background-color: blue;
+}
+
+select,
+input {
+  width: 200px;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: ;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.m-top {
+  margin-top: 16px;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.chart {
+  width: 100%;
+}
+
+.chart canvas {
+  margin: 0 auto;
+  height: 500px;
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    padding: 0;
+  }
+
+  .calculator .calculator-container {
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
